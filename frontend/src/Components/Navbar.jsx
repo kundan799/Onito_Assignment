@@ -13,14 +13,18 @@ import {
   const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
+      <div style={{width:"100%"}}>
       <Box
-        w="100%"
+        
         bg={useColorModeValue("gray.100", "gray.900")}
         h="80px"
+        // w="100%"
         style={{
+          width:"100%",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-evenly",
           alignItems: "center",
+         
         }}
         p="10px"
       >
@@ -43,6 +47,7 @@ import {
           </Button>
         </Box>
       </Box>
+      </div>
     );
   };
   
